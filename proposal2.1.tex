@@ -1,0 +1,474 @@
+\documentclass{article}
+
+\usepackage{csquotes}
+
+\title{AI-Powered Summarization and \enquote{Interaction} with Academic Papers}
+
+\author{Ruslan Popov}
+
+\newenvironment{block}%
+{\list{}{\leftmargin=0.0in\rightmargin=0.0in}  \item[]  }%
+{\endlist}
+
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	filecolor=blue,
+	urlcolor=blue,
+	linktoc=none
+}
+
+\usepackage{indentfirst}
+
+\usepackage{graphicx}
+
+\usepackage[section]{placeins}
+
+\usepackage{algpseudocode}
+
+\usepackage{float}
+
+\setlength{\parindent}{0em}
+\setlength{\parskip}{1ex}
+
+\begin{document}
+	\maketitle
+	
+	\tableofcontents
+	
+	\section{Personal information}
+	
+	\subsection{Personal details}
+	
+	\begin{itemize}
+		\item Name: Ruslan Popov
+		
+		\item Email: ruslanpopov1512@gmail.com, popov\_ro@ffeks.dnu.edu.ua.
+		
+		\item Country: Ukraine.
+		
+		\item Timezone: GMT+2 (Eastern European Standard Time).
+		
+		\item University: Oles Honchar Dnipro National University.
+		
+		\item Major: Computer Science.
+	\end{itemize}
+	
+	\subsection{Background}
+	I have been interested in programming and everything connected to computers and technology from my childhood (specifically, when I got my personal computer). I've participated in many activities at school, and was a member of several tech-related clubs. I've also participated in physics and chemistry olympiads (grand competitions) and got prize-winning place (II on regional level for physics, I on regional level for chemistry, \textit{didn't participate in country level because of COVID}). Eventually, I decided to major in computer science.
+	
+	During the governmental examination I got the highest grade on the math exam. I got the highest evaluation mark for entering the university (just a weighted sum of exam grades). Currently, I am a freshman at university, studying computer science. I have no problems with studying and have completed many subjects ahead of time.
+	
+	Mostly, I learn on my own. I constantly learn new programming languages and technologies and read books. I try to write small projects based on what I learned. Here are the examples of the most completed (\textit{I have a lot of uncompleted but very interesting projects, and those are quite old}):
+	\begin{enumerate}
+		\item \href{https://github.com/InAnYan/chip8}{CHIP-8 emulator} written in C++ language. I have additionally written an assembler and disassembler for the CHIP-8 processor, and even tried to write a small game (like breakout).
+		\item \href{https://github.com/InAnYan/LispCpp}{Lisp} and \href{https://github.com/InAnYan/LoxCpp}{Lox} interpreters written in C++ language.
+		\item An interpreter for my own programming language: \href{https://github.com/InAnYan/Loop}{Loop}. It has many features from well-known programming languages. \textit{I've abandoned it, so recent commits may not work}.
+	\end{enumerate}
+	
+	Currently, I have lost interest from low-level programming and now I'm trying to fill the gaps in my knowledge from other fields of programming. I haven't found interesting projects for programming languages, or they were too complex for me.
+	
+	I have experience writing academic papers, using \LaTeX, BibLaTeX. I will tell only about one of my papers. I'm participating in an international science competition called \href{http://isc.ontu.edu.ua/?lang=en}{Black Sea Science} (\textit{warning, HTTP only}). In this competition students submit their paper for evaluation. I have written and explained the inner workings of a program that could automatically solve physics word problems. Here is the citation and link:
+	
+	\begin{block}
+		Popov, R., \& Karpenko, N. (2024). \href{https://github.com/InAnYan/papers/blob/main/PhysicsSolver/Paper.pdf}{Automatic solving of physics word problems}.
+	\end{block}
+	
+	This paper \href{http://isc.ontu.edu.ua/wp-content/uploads/sites/50/2024/03/2024-1-IT.pdf}{won the second place in the first tour} and will be published in journal:\href{https://atbp.ontu.edu.ua/en/site/page/journal}{\enquote{Automation technological and business - processes}}. Currently, I'm waiting for the final results.
+	
+	For now, I'm interested in the AI field. My program was using rule-based techniques, and I want to learn the modern machine learning algorithms. That's where this GSoC project picked my attention.
+	
+	I have no previous contributions besides this project.
+	
+	\section{Preliminary information}
+	
+	\subsection{Commitments during GSoC}
+	I have a month of exams in my university in June. Well, I think I may be off several days. But the pressure in my university is so low, so this is absolutely not a problem.
+	
+	\section{Project proposal}
+	
+	\subsection{Synopsis}
+	This project seeks to make research more efficient by adding powerful AI tools to JabRef. New features are:
+	\begin{itemize}
+		\item \enquote{Interaction} with papers (question answering mostly).
+		\item Connection to different AI providers.
+		\item Getting summaries of research papers.
+		\item Interaction with library groups (QA and summarization).
+		\item Support of local LLMs.
+		\item Smart search for articles.
+		\item Integration with SchoolarAI.
+	\end{itemize}	
+	
+	\subsection{Related Work}
+	Related work in reference managers:
+	\begin{itemize}
+		\item \href{https://www.zotero.org/}{Zotero}: currently it has no plans to integrate AI technologies. But there are several plugins:
+		\begin{itemize}
+			\item \href{https://github.com/kazgu/zotero-chatgpt}{kazgu/zotero-chatgpt}: supports only interaction with one document.
+			
+			\item \href{https://github.com/MuiseDestiny/zotero-gpt}{MuiseDestiny/zotero-gp}: seems like an interesting project, but it lacks documentation and tutorials. Chinese is extensively used, with practically no English support.
+			
+			\item \href{https://github.com/lifan0127/ai-research-assistant}{lifan0127/ai-research-assistant}: has many interesting features. However, it relies on OpenAI's ChatGPT 4.
+		\end{itemize}
+		
+		\item \href{https://www.mendeley.com/}{Mendeley}: no AI integration.
+		
+		\item \href{https://paperpile.com/?welcome}{Paperpile}: no AI integration.
+		
+		\item \href{https://endnote.com/}{EndNote}: no AI integration.
+		
+		\item \href{https://www.citavi.com/en}{Citavi}: no AI integration.
+	\end{itemize}
+	
+	Related work in research assistants:
+	\begin{itemize}
+		\item \href{https://www.explainpaper.com/}{Explainpaper}: service that gives you ability to interact with papers. Though, it supports only one document and relies on OpenAI's ChatGPT. Moreover, the free version is very limited.
+		
+		\item \href{https://typeset.io/}{Scispace}: searches for articles and provides summaries. Let's you explain parts of papers. Again, it's fully online.
+		
+		\item \href{https://askyourpdf.com}{AskYourPDF}: another program, similar to others.
+	\end{itemize}
+	
+	There are many programs like AskYourPDFs, but they provide the same set of features.
+	
+	\subsection{Benefits to Community}
+	Our app offers valuable features for researchers. It provides summarized analyses of research papers, saving time and effort. Enhanced literature discovery ensures staying updated with the latest research, while seamless integration with multiple AI providers offers flexibility and access to cutting-edge technology. These features streamline workflow, save time, and deepen understanding, accelerating research and aiding informed decisions and discoveries.
+	
+	Our program offers distinct advantages: integration with diverse AI providers, support for local LLMs, and extensibility. It provides access to a variety of tools, improves accuracy with tailored language models, and easily adapts to future needs.
+	
+	\subsection{Some work that I have done}
+	In order to investigate the source code of JabRef and prove the ability to do programming I've tried to resolve several issues:
+	\begin{itemize}
+		\item  Support .lnk files for TeXworks \href{https://github.com/JabRef/jabref/pull/11065}{\#11065}. \textit{Merged!}
+		
+		\item  Fix html content handling when fetching IEEE papers \href{https://github.com/JabRef/jabref/pull/11091}{\#11091}. \textit{Co-author.}
+	\end{itemize}
+	
+	I want to thank you for this opportunity. It's my first (\textit{very small}) contribution to open source, and I still need to learn a lot.
+	
+	Also, to understand the available instruments for making AI apps, I've made a prototype app in which users can interact with PDF files (either a single file or directory with several files). This was a very important experience that showed the challenges for making such an app.
+	
+	While experimenting with \texttt{langchain4j} library, I came across a bug, I have made an \href{https://github.com/langchain4j/langchain4j/issues/816}{issue} and even \href{https://github.com/langchain4j/langchain4j/pull/817}{solved it}.
+	
+	\subsection{Comments on timeline}
+	\begin{itemize}
+		\item At the end of each week we will have a complete feature and a new version of JabRef.
+		\item There are two kinds of tests: basic tests which involve UI functionality, storing functionality, connection tests, etc. The other type of tests are LLM tests. We can't automatize them, so a human check is needed. And also an API key is needed for testing. In each week there is a sub-goal \enquote{Test} that means the first types of testing.
+		\item In each week there are a sub-goal \enquote{Receive and process the feedback}. It usually means \enquote{Receive and process the feedback of previous feature}. So that we work in parallel on new feature and improving the previous. We want to make this project \enquote{iterative}, meaning the users will have access to all new features right in the code period, not just at the end of GSoC.
+	\end{itemize}
+	
+	\subsection{Timeline}
+	
+	\subsubsection{Week 1 -- Chat with one document}
+	\textbf{Goals}:
+	\begin{itemize}
+		\item Make UI tab
+		\item Establish a connection to LLM
+		\item Experiment with embedding model and prompt templates
+		\item Test the feature
+		\item Document the feature
+		\item Receive and process the feedback
+	\end{itemize}
+	
+	\textbf{Results of this week}: the first addition to JabRef! Users will be able to interact with one library entry (if it has a full-text attached).
+	
+	\textbf{UI changes or additions}:
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=\linewidth]{C:/Users/ruslan/Documents/ShareX/Screenshots/2024-03/firefox_wHkbDc0PSN}
+		\caption{New UI - chat with entry (new tab)}
+		\label{fig:firefoxwhkbdc0psn}
+	\end{figure}
+	
+	\textbf{Implementation details}: we need to make a new UI components, then integrate the \texttt{langchain4j} library.
+	
+	\textbf{Possible challenges}: while I've experimented with \texttt{langchain4j}, I don't have experience with JavaFX. But I hope I will learn along the way.
+	
+	\textbf{Useful links}:
+	\begin{itemize}
+		\item \href{https://github.com/langchain4j/langchain4j}{\texttt{langchain4j} library repo}.
+		\item \href{https://github.com/langchain4j/langchain4j-examples/blob/main/other-examples/src/main/java/ChatWithDocumentsExamples.java}{Chat with documents example}.
+	\end{itemize}
+
+	\subsubsection{Week 2 -- Different AI providers}
+	\textbf{Goals}:
+	\begin{itemize}
+		\item Make preferences model
+		\item Make a tab in settings window
+		\item Test the feature
+		\item Document the feature
+		\item Receive and process the feedback
+	\end{itemize}
+	
+	\textbf{Results of this week}: users will have the ability to use the AI provider they have (have paid) or they like the most. This feature also gives the ability to experiment and evaluate effectiveness of different AI models.
+	
+	\textbf{UI changes or additions}:
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=\linewidth]{C:/Users/ruslan/Documents/ShareX/Screenshots/2024-03/firefox_9fbIS9t7JX}
+		\caption{New UI - new tab in preferences}
+		\label{fig:firefox9fbis9t7jx}
+	\end{figure}
+	
+	\textbf{Implementation details}: \texttt{langchain4j} provides many integration with modern AI providers, so we can easily reuse them.
+	
+	\textbf{Possible challenges}: probably no. But I only have some money on OpenAI API, so I can't test others. Also, Google AI APIs are not available in Ukraine.
+	
+	\textbf{Useful links}:
+	\begin{itemize}
+		\item \href{https://docs.langchain4j.dev/category/language-models}{List of \texttt{langchain4j} integrations}.
+	\end{itemize}
+
+	\subsubsection{Week 3 -- Summarize one document}
+		\textbf{Goals}:
+		\begin{itemize}
+			\item Make UI button
+			\item Implement summarization algorithms
+			\item Experiment with algorithms parameters and prompt templates
+			\item Test the feature
+			\item Document the feature
+			\item Receive and process the feedback
+		\end{itemize}
+		
+		\textbf{Results of this week}: users can now ask AI to summarize documents.
+		
+		\textbf{UI changes or additions}: add button \enquote{Summarize} next to user message field.
+		
+		\textbf{Implementation details}: summarization should be implemented separately from QA because they use different algorithms. If the user will type \enquote{Can you make a brief summary of the document, please?} in message field then it will have very bad consequences (test in the prototype app I made).
+		
+		\textbf{Possible challenges}: \texttt{langchain4j} doesn't have algorithms for summarization, and there is no library for Java with those algorithms. We have to rewrite them in Java. That's not a problem because this topic is actively studied and is implemented in parent Python library \texttt{langchain} (which \texttt{langchain4j} is derived from).
+		
+		\textbf{Useful links}:
+		\begin{itemize}
+			\item \href{https://github.com/GoogleCloudPlatform/generative-ai/blob/main/language/use-cases/document-summarization/summarization_large_documents_langchain.ipynb}{Summarization methods 1 (Google)}.
+			\item \href{https://github.com/gkamradt/langchain-tutorials/blob/main/data_generation/5%20Levels%20Of%20Summarization%20-%20Novice%20To%20Expert.ipynb}{Summarization methods 2}.
+			\item \href{https://python.langchain.com/docs/use_cases/summarization}{Summarization in \texttt{langchain} (Python)}.
+		\end{itemize}
+	
+	\subsubsection{Week 4 -- Chat with a group of documents}
+	\textbf{Goals}:
+	\begin{itemize}
+		\item Make UI window for chat with groups
+		\item Instruct LLM to add references where it has taken information
+		\item Test the feature
+		\item Document the feature
+		\item Receive and process the feedback
+	\end{itemize}
+	
+	\textbf{Results of this week}: a very useful feature for QA over several documents. If we even provide links to entries in the AI response that would be super cool.
+	
+	\textbf{UI changes or additions}:
+	
+	\textit{In the first draft of this proposal, I have made it as a button that allows to talk with the library. However, we have changed it to talk not to the library, but to a group of entries. We can implement this either as a button or a menu entry}
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=\linewidth]{C:/Users/ruslan/Documents/ShareX/Screenshots/2024-03/firefox_d6eZM8ggDi}
+		\caption{New UI - chat with library window}
+		\label{fig:firefoxd6ezm8ggdi}
+	\end{figure}
+	
+	\textbf{Implementation details}: the \texttt{langchain4j} tutorial for \enquote{Chat with documents} has all the code we need. There are practically no changes compared with a single document.
+	
+	\textbf{Possible challenges}: the biggest challenge here is to make LLM add citations from which it has taken the relevant information for the question. \texttt{langchain4j} doesn't have such feature. We can also implement it on another week, if it turns out too hard. \textit{But I would really like to have this feature in JabRef. Does any service has a feature like this?}
+	
+%	A possible algorithm would be:
+%	
+%	\begin{algorithmic}
+%		\Function{qa\_in\_group}{group, question}
+%			\State $info \gets \emptyset$
+%			
+%			\ForAll{$doc \in group$}
+%				\State $result = doc.authors + ":" + answer(question,\ doc)$
+%				\State $info = result\ \cup\ result$
+%			\EndFor
+%			
+%			\State \Return $info$
+%		\EndFunction
+%	\end{algorithmic}
+%	
+%	Still some investigation is needed if there was some already developed solution. A refinement of algorithm is needed to. The main disadvantage of this algorithm is that it generates 
+	
+	\subsubsection{Week 5 -- Summarize a group of documents}
+	\textbf{Goals}:
+	\begin{itemize}
+		\item Make UI button
+		\item Reuse or expand the available summarization algorithms
+		\item Test the feature
+		\item Document the feature
+		\item Receive and process the feedback
+	\end{itemize}
+	
+	\textbf{Results of this week}: a brief summary of the topic of the library.
+	
+	\textbf{UI changes or additions}: just a button in chat window.
+	
+	\textbf{Implementation details}: there should not be much a problem if we reuse the algorithms for summarization of one paper.
+	
+	\textbf{Possible challenges}: maybe there are better ways to summarize several documents, so a little investigation is needed. And again \texttt{langchain4j} doesn't have those algorithms.
+	
+	\subsubsection{Milestone 1 -- First integration with remote LLMs done}
+	\textbf{Now user can}:
+	\begin{itemize}
+		\item Interact with documents
+		\item Summarize documents
+		\item Use their favorite AI providers
+	\end{itemize}
+	
+	\subsubsection{Week 6 -- Local LLM provider}
+	\textbf{Goals}:
+	\begin{itemize}
+		\item Investigate the available libraries or methods for running a local LLM
+		\item Add the Ollama server variant in model preferences tab
+		\item Write clear and simple tutorials about how to start and use Ollama
+		\item Test the feature
+		\item Document the feature
+		\item Receive and process the feedback
+	\end{itemize}
+	
+	\textbf{Results of this week}: users an use LLM safely, confidentially without relying on third-party services.
+	
+	\textbf{UI changes or additions}: add a variant in model preferences tab.
+	
+	\textbf{Implementation details}: there are two main libraries for running local LLMs: LocalAI and Ollama. They act as a server that have compatible API as in OpenAI API. Moreover, they have integration with \texttt{langchain4j}. LocalAI can support many models from Hugging Face in \texttt{.gguf} and \texttt{.ggml} formats. Also, it has more features than Ollama (text to audio, text to image, etc.). For now it's much simpler to use Ollama. It has simpler configuration and supports only LLM. They also have a curated list of LLM models, so users don't have to worry too much about choices.
+	
+	\textbf{Possible challenges}: I hope there will be no problems with running LLMs.
+	
+	\textbf{Useful links}:
+	\begin{itemize}
+		\item \href{https://localai.io/}{LocalAI}.
+		\item \href{https://ollama.com/}{Ollama}.
+		\item \href{https://ollama.com/library}{Ollama LLM support}.
+	\end{itemize}
+	
+	\subsubsection{Week 7 -- Article search}
+	\textbf{Goals}:
+	\begin{itemize}
+		\item Investigate the available libraries or frameworks
+		\item Make UI for article search
+		\item Test the feature
+		\item Document the feature
+		\item Receive and process the feedback
+	\end{itemize}
+	
+	\textbf{Results of this week}: the user can provide an LLM with a query and then the LLM will find the relevant articles.
+	
+	\textbf{UI changes or additions}:
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=\linewidth]{C:/Users/ruslan/Documents/ShareX/Screenshots/2024-03/firefox_Buo4bSTDWJ}
+		\caption{New UI - window for article search}
+		\label{fig:firefoxbuo4bstdwj}
+	\end{figure}
+	
+	\textbf{Implementation details}: we need to investigate (\textit{I've probably used this word too many times}) the available libraries for this task.
+	
+	\subsubsection{Milestone 2 -- First integration with local LLMs done}
+	\textbf{Now user can}:
+	\begin{itemize}
+		\item Use a local LLM model while interacting with documents
+		\item Use smart search for papers with AI help.
+	\end{itemize}
+	
+	\subsubsection{Week 8 -- ScholarAI integration}
+	\textbf{Goals}:
+	\begin{itemize}
+		\item Investigate methods for integration, retrieving information, authorizing, etc.
+		\item Synchronization with ScholarAI (PDFs and library entries)
+		\item Chat with ScholarAI
+		\item Test the feature
+		\item Document the feature
+		\item Receive and process the feedback
+	\end{itemize}
+	
+	\textbf{Results of this week}: integration with ScholarAI.
+	
+	\textbf{UI changes or additions}: may include some window for chat and buttons (or menu entries) for synchronization. Also a window for login.
+	
+	\textbf{Possible challenges}: SchoolarAI doesn't have a public API.
+	
+	\subsubsection{Week 9 -- Kernel Memory}
+	\textbf{Goals}:
+	\begin{itemize}
+		\item Investigate features provided with Kernel Memory
+		\item Experiment with and integrate Kernel Memory to JabRef.
+		\item Test the feature
+		\item Document the feature
+		\item Receive and process the feedback
+	\end{itemize}
+	
+	\textbf{Results of this week}: a more powerful AI integration.
+	
+	\textbf{Useful links}:
+	\begin{itemize}
+		\item \href{https://github.com/microsoft/kernel-memory?tab=readme-ov-file#kernel-memory}{Kernel Memory GitHub}.
+	\end{itemize}
+	
+	\subsubsection{Milestone 3 -- Integration with local and remote LLMs done}
+	\textbf{Now user can}:
+	\begin{itemize}
+		\item Work with ScholarAI.
+		\item Enhance their work with Kernel Memory services.
+	\end{itemize}
+	
+	\subsubsection{Week 10 -- Semantic Kernel}
+	\textbf{Goals}:
+	\begin{itemize}
+		\item Investigate features provided with Semantic Kernel
+		\item Experiment with and integrate Semantic Kernel to JabRef.
+		\item Test the feature
+		\item Document the feature
+		\item Receive and process the feedback
+	\end{itemize}
+	
+	\textbf{Results of this week}: a more powerful AI integration.
+	
+	\textbf{Useful links}:
+	\begin{itemize}
+		\item \href{https://github.com/microsoft/semantic-kernel}{Semantic Kernel GitHub}.
+		\item \href{https://learn.microsoft.com/en-us/semantic-kernel/agents/kernel/?tabs=Csharp}{Semantic Kernel documentation}.
+	\end{itemize}
+	
+	\subsubsection{Week 11 -- LLM tests}
+	\textbf{Goals}:
+	\begin{itemize}
+		\item Collect a library of documents
+		\item Make questions for these documents
+		\item Test different LLMs for QA
+		\item Test different LLMs for summarization
+		\item Check the speed and cost for this
+		\item Additionally include local LLMs for testing
+	\end{itemize}
+	
+	\textbf{Results of this week}: a research on effectiveness of different LLMs for QA and summarization in academic papers.
+	
+	\textbf{UI changes or additions}: no.
+	
+	\textbf{Implementation details}: we need to somehow automatize this, maybe make a script that generates a table. With the help of Oliver Kopp we have a dataset of articles from TUGboat.
+	
+	\textbf{Possible challenges}: we need to spend some time to make the questions and evaluate the answers. Also, it will take some time for the LLM to produce answer. Moreover we should be careful, so that it won't cost too much. (\textit{OpenAI says \enquote{pay as you go}, and the price for a token is not small, so I hope this won't be a problem}).
+	
+	\textbf{Useful links}:
+	\begin{itemize}
+		\item \href{https://github.com/koppor/tugboat-mirror}{TUGboat mirror}.
+	\end{itemize}
+	
+	\subsubsection{Week 12 -- Final polishing}
+	\textbf{Includes}:
+	\begin{itemize}
+		\item Writing documentation
+		\item Writing tutorial
+		\item Writing blog posts
+		\item Fixing bugs
+	\end{itemize}
+	
+	\subsubsection{Milestone 4 -- Alternatives evaluated and documented. User-facing documentation done.}
+	\begin{itemize}
+		\item The final milestone that represents the whole work. We successfully made the interaction with papers, AI providers integration, smart article search, and more.
+		\item We also conducted testing of different LLM models which is a very useful result.
+		\item Users will have nice and clear tutorials about how to use the new AI technologies the best way.
+	\end{itemize}
+\end{document}
