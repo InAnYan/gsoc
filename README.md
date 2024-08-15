@@ -113,7 +113,7 @@ Future features include:
 - [Add AI documentation](https://github.com/JabRef/user-documentation/pull/491).
 - [Update AI documentation](https://github.com/JabRef/user-documentation/pull/497).
 
-## Side PRs in JabRef
+## Improving JabRef in addition to the project aims
 
 - [Add more explanation for localization in Java code and FXML](https://github.com/JabRef/jabref/pull/11559).
 - [Change branches of `scanLabeledControls`](https://github.com/JabRef/jabref/pull/11349).
@@ -122,7 +122,7 @@ Future features include:
 - [Fix help wanted in adding entry PDFs](https://github.com/JabRef/user-documentation/pull/496).
 - [Add more explanation for localization in Java code and FXML](https://github.com/JabRef/jabref/pull/11559).
 
-## PRs in other repositories
+## PRs to other repositories
 
 - [Add docusaurus-lunr-search plugin](https://github.com/langchain4j/langchain4j/pull/1221).
 - [Implement remove methods for InMemoryEmbeddingStore](https://github.com/langchain4j/langchain4j/pull/1220).
