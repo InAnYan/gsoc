@@ -1,4 +1,4 @@
-| __Student__            | Ruslan Popov                                                    |
+| __Student__            | [Ruslan Popov](https://github.com/InAnYan)                      |
 |------------------------|-----------------------------------------------------------------|
 | __Organization__       | [JabRef e.V.](https://verein.jabref.org/)                       |
 | __Primary repository__ | [JabRef/jabref](https://github.com/jabref/jabref)               |
