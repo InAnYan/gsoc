@@ -1,9 +1,9 @@
 | __Student__            | Ruslan Popov                                                    |
 |------------------------|-----------------------------------------------------------------|
-| __Organization__       | [JabRef]                                                        |
-| __Primary repository__ | [JabRef/jabref]                                                 |
+| __Organization__       | [JabRef e.V.](https://verein.jabref.org/)                       |
+| __Primary repository__ | [JabRef/jabref](https://github.com/jabref/jabref)               |
 | __Project name__       | AI-Powered Summarization and “Interaction” with Academic Papers |
-| __Project mentors__    | Christoph, koppor, Calixtus, ThiloteE                           |
+| __Project mentors__    | [@koppor](https://github.com/koppor/), [@ThiloteE](https://github.com/ThiloteE), [@Calixtus](https://github.com/calixtus/) |
 | __Project page__       | TODO                                                            |
 | __Status__             | Partially complete                                              |
 
