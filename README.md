@@ -1,9 +1,9 @@
-| __Student__            | Ruslan Popov                                                    |
+| __Student__            | [Ruslan Popov](https://github.com/InAnYan)                      |
 |------------------------|-----------------------------------------------------------------|
-| __Organization__       | [JabRef]                                                        |
-| __Primary repository__ | [JabRef/jabref]                                                 |
+| __Organization__       | [JabRef e.V.](https://verein.jabref.org/)                       |
+| __Primary repository__ | [JabRef/jabref](https://github.com/jabref/jabref)               |
 | __Project name__       | AI-Powered Summarization and “Interaction” with Academic Papers |
-| __Project mentors__    | Christoph, koppor, Calixtus, ThiloteE                           |
+| __Project mentors__    | [@koppor](https://github.com/koppor/), [@ThiloteE](https://github.com/ThiloteE), [@Calixtus](https://github.com/calixtus/) |
 | __Project page__       | TODO                                                            |
 | __Status__             | Partially complete                                              |
 
@@ -113,7 +113,7 @@ Future features include:
 - [Add AI documentation](https://github.com/JabRef/user-documentation/pull/491).
 - [Update AI documentation](https://github.com/JabRef/user-documentation/pull/497).
 
-## Side PRs in JabRef
+## Improving JabRef in addition to the project aims
 
 - [Add more explanation for localization in Java code and FXML](https://github.com/JabRef/jabref/pull/11559).
 - [Change branches of `scanLabeledControls`](https://github.com/JabRef/jabref/pull/11349).
@@ -122,7 +122,7 @@ Future features include:
 - [Fix help wanted in adding entry PDFs](https://github.com/JabRef/user-documentation/pull/496).
 - [Add more explanation for localization in Java code and FXML](https://github.com/JabRef/jabref/pull/11559).
 
-## PRs in other repositories
+## PRs to other repositories
 
 - [Add docusaurus-lunr-search plugin](https://github.com/langchain4j/langchain4j/pull/1221).
 - [Implement remove methods for InMemoryEmbeddingStore](https://github.com/langchain4j/langchain4j/pull/1220).
