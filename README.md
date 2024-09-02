@@ -50,6 +50,8 @@ Throughout the development process, I gained valuable insights into software eng
 
 ![Processing errors from AI](imgs/chatting-error.png)
 
+![Chatting with a group](imgs/group-chat.png)
+
 **Generating summary**:
 - Generating summary in background: just as embeddings generation, with all information needed.
 - Handle both small and large documents.
@@ -146,6 +148,19 @@ Future features include:
 - [\[FEATURE\] Add context window size and `estimateNumberOfTokens` to `ChatLanguageModel`](https://github.com/langchain4j/langchain4j/issues/1552).
 - [UI progress indication button is not shown, if at start of JabRef it was hidden](https://github.com/JabRef/jabref/issues/11572).
 - [JabRef resets window size and position when a dialog occurrs](https://github.com/JabRef/jabref/issues/11668).
+- [\[FEATURE\] Make `DocumentSplitter`s to be `Iterable`s or `Stream`s](https://github.com/langchain4j/langchain4j/issues/1664).
+- [Use `Optional[T]` for values that may not be present](https://github.com/lukasschwab/arxiv.py/issues/163).
+- [Black text in Dark mode inside "Citation information"](https://github.com/JabRef/jabref/issues/11512).
+- [`ExpandingTextArea` doesn't change it's height when Enter handler is changed](https://github.com/dlsc-software-consulting-gmbh/GemsFX/issues/198).
+- [\[QUESTION\] Does `MVStore` supports mutable values in `MVMap`s](https://github.com/h2database/h2database/issues/4090).
+- [\[FEATURE\] Add metod to `Criteria` to check whether the model was downloaded or not ](https://github.com/deepjavalibrary/djl/issues/3397).
+- [bug: Logical inconsistency about privacy](https://github.com/janhq/docs/issues/54).
+- [Extra step in documentation](https://github.com/JabRef/jabref/issues/11284).
+- [\[FEATURE\] Make MessageWindowChatMemory not to remove evicted messages from ChatMemoryStore](https://github.com/langchain4j/langchain4j/issues/1107).
+- [\[FEATURE\] Generate new chat IDs automatically as a default parameter](https://github.com/langchain4j/langchain4j/issues/1108).
+- [\[FEATURE\] Implement searching on docs website](https://github.com/langchain4j/langchain4j/issues/1219).
+- [`scanLabeledControl` logic issue](https://github.com/JabRef/jabref/issues/11348).
+- [\[BUG\] FileSystemDocumentLoader cannot handle relative paths without parent directory](https://github.com/langchain4j/langchain4j/issues/816).
 
 # Statistics
 
@@ -159,3 +174,15 @@ TODO
 # Blog posts
 
 - [AI functionality in JabRef](TODO).
+
+# Acknowledges
+
+I want to say thank you to those people and comapanies:
+- @koppor for mentoring in the project and for raising me as a real developer.
+- @ThiloteE for mentoring in the project and for great knowledge of AI ecosystem.
+- @calixtus for mentoring in the project and for reviewing and improving my PR.
+- @langchain4j for developing and supporting the [`langchain4j`](https://github.com/langchain4j/langchain4j) library.
+- @hendrikebbers for raising and fixing the [split package problems in `langchain4j`](https://github.com/langchain4j/langchain4j/issues/1066).
+- @StefanBratanov for developing the [`jvm-openai`](https://github.com/StefanBratanov/jvm-openai) library.
+- @deepjavalibrary for developing the [`djl`](https://github.com/deepjavalibrary/djl) library.
+- [OpenAI](https://openai.com/), [Mistral AI](https://mistral.ai/), and [Hugging Face](https://huggingface.co/) for their API and models.
