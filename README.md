@@ -101,16 +101,10 @@ Throughout the development process, I gained valuable insights into software eng
 
 ## Future work
 
-We had a great plan for this GSoC proposal. But:
-- Some ideas are still *work in progress*.
-- Current work needs a lot of polishing.
-
 Future features include:
-- Chatting with several library entries at once.
-- Research papers search.
+- Introduce AI papers search.
 - Support fully offline mode (no external access to network).
 - Support for external RAG (all of the workload for generating and storing embeddings, generating AI answer is offloaded to a separate server).
-- Summarizing group of documents.
 
 # Pull requests to **main** branch
 
