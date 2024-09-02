@@ -128,6 +128,20 @@ Future features include:
 - [Implement remove methods for InMemoryEmbeddingStore](https://github.com/langchain4j/langchain4j/pull/1220).
 - [Support relative paths without parent directory](https://github.com/langchain4j/langchain4j/pull/817).
 
+## Issues raised
+
+- [Devdocs don't have favicon](https://github.com/JabRef/jabref/issues/11369).
+- [Number of indexed files grows after reindexing action](https://github.com/JabRef/jabref/issues/11378).
+- [Logical flaw with stylesheets for Markdown](https://github.com/JPro-one/JPro-Platform/issues/42).
+- [Process finished with non-zero exit value 1](https://github.com/redocksoft/classpath-to-file-gradle-plugin/issues/4).
+- ["Default library mode" combobox is cut off](https://github.com/JabRef/jabref/issues/11447).
+- [\[FEATURE\] Add `logRequests` and `logResponses` to `HuggingFaceChatModel`](https://github.com/langchain4j/langchain4j/issues/1395).
+- [\[FEATURE\] Stop document ingestion in the middle of the process](https://github.com/langchain4j/langchain4j/issues/1421).
+- [\[FEATURE\] Distribution size of app that uses langchain4j with in-process embedding models](https://github.com/langchain4j/langchain4j/issues/1492).
+- [\[FEATURE\] Add context window size and `estimateNumberOfTokens` to `ChatLanguageModel`](https://github.com/langchain4j/langchain4j/issues/1552).
+- [UI progress indication button is not shown, if at start of JabRef it was hidden](https://github.com/JabRef/jabref/issues/11572).
+- [JabRef resets window size and position when a dialog occurrs](https://github.com/JabRef/jabref/issues/11668).
+
 # Statistics
 
 TODO
