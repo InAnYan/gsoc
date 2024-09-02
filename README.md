@@ -40,15 +40,6 @@ Throughout the development process, I gained valuable insights into software eng
 
 ## Work done
 
-**Privacy notice**:
-- Tell users how AI features work.
-- Give users link to privacy policies of AI providers.
-- Add the ability to agree or disagree (if user don't click "I agree", nothing will happen, they can turn off "AI Chat" and "AI Summary" in preferences).
-
-![Privacy notice](imgs/privacy-notice.png)
-
-![Entry editor settings](img/entry-editor-settings.png)
-
 **Chatting with AI**:
 - Сonnect to LLM.
 - Store chat history.
@@ -58,14 +49,6 @@ Throughout the development process, I gained valuable insights into software eng
 ![Chatting with AI screenshot](imgs/chatting.png)
 
 ![Processing errors from AI](imgs/chatting-error.png)
-
-**Generating embeddings in background**:
-- Tell users that they need to wait before chatting with attached files.
-- Generate embeddings in background: it also shows how much work was and should be done, with ETA estimation.
-
-![Waiting for embedding generation in AI chat](imgs/chatting-embeddings-waiting.png)
-
-![Embeddings generation background task](imgs/embeddings-background-task.png)
 
 **Generating summary**:
 - Generating summary in background: just as embeddings generation, with all information needed.
@@ -79,6 +62,23 @@ Throughout the development process, I gained valuable insights into software eng
 ![Waiting for summary in AI summary tab](imgs/summary-waiting.png)
 
 ![Summary generation background task](imgs/summary-background-task.png)
+
+**Generating embeddings in background**:
+- Tell users that they need to wait before chatting with attached files.
+- Generate embeddings in background: it also shows how much work was and should be done, with ETA estimation.
+
+![Waiting for embedding generation in AI chat](imgs/chatting-embeddings-waiting.png)
+
+![Embeddings generation background task](imgs/embeddings-background-task.png)
+
+**Privacy notice**:
+- Tell users how AI features work.
+- Give users link to privacy policies of AI providers.
+- Add the ability to agree or disagree (if user don't click "I agree", nothing will happen, they can turn off "AI Chat" and "AI Summary" in preferences).
+
+![Privacy notice](imgs/privacy-notice.png)
+
+![Entry editor settings](img/entry-editor-settings.png)
 
 **AI preferences**:
 - Choose chat model.
