@@ -146,7 +146,7 @@ Future features include:
 
 ### Other repositories
 
-- [JPro-one: Logical flaw with stylesheets for Markdown](https://github.com/JPro-one/JPro-Platform/issues/42).
+- JPro-one: [Logical flaw with stylesheets for Markdown](https://github.com/JPro-one/JPro-Platform/issues/42).
 - [classpath-to-file-gradle-plugi: Process finished with non-zero exit value 1](https://github.com/redocksoft/classpath-to-file-gradle-plugin/issues/4).
 - [langchain4j:_ \[FEATURE\] Add `logRequests` and `logResponses` to `HuggingFaceChatModel`](https://github.com/langchain4j/langchain4j/issues/1395).
 - [\[FEATURE\] Stop document ingestion in the middle of the process](https://github.com/langchain4j/langchain4j/issues/1421).
