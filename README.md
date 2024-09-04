@@ -81,7 +81,7 @@ Throughout the development process, I gained valuable insights into software eng
 
 ![Privacy notice](imgs/privacy-notice.png)
 
-![Entry editor settings](img/entry-editor-settings.png)
+![Entry editor settings](imgs/entry-editor-settings.png)
 
 **AI preferences**:
 - Choose chat model.
