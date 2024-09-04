@@ -109,7 +109,7 @@ Future features include:
 - Support fully offline mode (no external access to network).
 - Support for external RAG (all of the workload for generating and storing embeddings, generating AI answer is offloaded to a separate server).
 
-# Pull requests to **main** branch
+## Pull requests
 
 ## Project-related work
 
@@ -130,7 +130,7 @@ Future features include:
 - [Fix help wanted in adding entry PDFs](https://github.com/JabRef/user-documentation/pull/496).
 - [Add more explanation for localization in Java code and FXML](https://github.com/JabRef/jabref/pull/11559).
 
-## PRs to other repositories
+## Pull requests to other repositories
 
 - [Add docusaurus-lunr-search plugin](https://github.com/langchain4j/langchain4j/pull/1221).
 - [Implement remove methods for InMemoryEmbeddingStore](https://github.com/langchain4j/langchain4j/pull/1220).
