@@ -33,7 +33,7 @@ There were many challanges during the development of this project, and I develop
 - There were instances where langchain4j was not sufficient for our needs. In such cases, we employed various other libraries to ensure the functionality and performance of the AI features.
 - On the frontend side, there is a long standing issue in JavaFX about [Text of labels should be selectable/copyable](https://bugs.openjdk.org/browse/JDK-8091644). This severely affects how we develop chat UI, because, on one hand, users need a comfortable UI (which can be made with `Label` or `Text` element), but, on the other hand, users will want a copy feature (which is only available in `TextField` or `TextArea` components). [We still have many issues with the chat UI and scrolling down the messsages](https://github.com/InAnYan/jabref/issues/172).
 
-All those issues were unexpected at the beginning of the project, and they caused headaches at my and mentors side. With having time lost at these unexpected Java eco system issues, we could not work on JabRef itself.
+All those issues were unexpected at the beginning of the project, and they caused headaches at my and mentor's side. With having time lost at these unexpected Java eco system issues, we could not work on JabRef itself.
 
 Initially, understanding the existing code base and integrating JavaFX and other libraries was challenging. However, with time and guidance from mentors, I became more proficient. Integrating AI features into the existing application required overcoming numerous bugs and architectural challenges. Most issues were resolved, but there is still work to be done. We faced limitations with available AI libraries for Java, particularly with langchain4j. These issues required additional time and effort to resolve.
 
@@ -185,11 +185,11 @@ TODO
 
 I want to say thank you to those people and comapanies:
 
-- @koppor for mentoring in the project and for raising me as a real developer.
-- @ThiloteE for mentoring in the project and for great knowledge of AI ecosystem.
-- @calixtus for mentoring in the project and for reviewing and improving my PR.
-- @langchain4j for developing and supporting the [`langchain4j`](https://github.com/langchain4j/langchain4j) library.
-- @hendrikebbers for raising and fixing the [split package problems in `langchain4j`](https://github.com/langchain4j/langchain4j/issues/1066).
-- @StefanBratanov for developing the [`jvm-openai`](https://github.com/StefanBratanov/jvm-openai) library.
-- @deepjavalibrary for developing the [`djl`](https://github.com/deepjavalibrary/djl) library.
+- [@koppor](https://github.com/koppor/) for mentoring in the project and for raising me as a real developer.
+- [@ThiloteE](https://github.com/ThiloteE) for mentoring in the project and for great knowledge of AI ecosystem.
+- [@calixtus](https://github.com/calixtus) for mentoring in the project and for reviewing and improving my PR.
+- [@langchain4j](https://github.com/langchain4j/) for developing and supporting the [`langchain4j`](https://github.com/langchain4j/langchain4j) library.
+- [@hendrikebbers](https://github.com/hendrikebbers) for raising and fixing the [split package problems in `langchain4j`](https://github.com/langchain4j/langchain4j/issues/1066).
+- [@StefanBratanov](https://github.com/StefanBratanov) for developing the [`jvm-openai`](https://github.com/StefanBratanov/jvm-openai) library.
+- [@deepjavalibrary](https://github.com/deepjavalibrary/) for developing the [`djl`](https://github.com/deepjavalibrary/djl) library.
 - [OpenAI](https://openai.com/), [Mistral AI](https://mistral.ai/), and [Hugging Face](https://huggingface.co/) for their API and models.
