@@ -138,12 +138,17 @@ Future features include:
 
 ## Issues raised
 
+### JabRef
+
 - [Devdocs don't have favicon](https://github.com/JabRef/jabref/issues/11369).
 - [Number of indexed files grows after reindexing action](https://github.com/JabRef/jabref/issues/11378).
-- [Logical flaw with stylesheets for Markdown](https://github.com/JPro-one/JPro-Platform/issues/42).
-- [Process finished with non-zero exit value 1](https://github.com/redocksoft/classpath-to-file-gradle-plugin/issues/4).
 - ["Default library mode" combobox is cut off](https://github.com/JabRef/jabref/issues/11447).
-- [\[FEATURE\] Add `logRequests` and `logResponses` to `HuggingFaceChatModel`](https://github.com/langchain4j/langchain4j/issues/1395).
+
+### Other repositories
+
+- [JPro-one: Logical flaw with stylesheets for Markdown](https://github.com/JPro-one/JPro-Platform/issues/42).
+- [classpath-to-file-gradle-plugi: Process finished with non-zero exit value 1](https://github.com/redocksoft/classpath-to-file-gradle-plugin/issues/4).
+- [langchain4j:_ \[FEATURE\] Add `logRequests` and `logResponses` to `HuggingFaceChatModel`](https://github.com/langchain4j/langchain4j/issues/1395).
 - [\[FEATURE\] Stop document ingestion in the middle of the process](https://github.com/langchain4j/langchain4j/issues/1421).
 - [\[FEATURE\] Distribution size of app that uses langchain4j with in-process embedding models](https://github.com/langchain4j/langchain4j/issues/1492).
 - [\[FEATURE\] Add context window size and `estimateNumberOfTokens` to `ChatLanguageModel`](https://github.com/langchain4j/langchain4j/issues/1552).
@@ -179,6 +184,7 @@ TODO
 # Acknowledges
 
 I want to say thank you to those people and comapanies:
+
 - @koppor for mentoring in the project and for raising me as a real developer.
 - @ThiloteE for mentoring in the project and for great knowledge of AI ecosystem.
 - @calixtus for mentoring in the project and for reviewing and improving my PR.
