@@ -106,7 +106,8 @@ Throughout the development process, I gained valuable insights into software eng
 Future features include:
 - Introduce AI papers search.
 - Support fully offline mode (no external access to network).
-- Support for external RAG (all of the workload for generating and storing embeddings, generating AI answer is offloaded to a separate server).
+- Support for external RAG (all of the workload for generating and storing embeddings, generating AI answer is offloaded to a separate server). This can be implemented using [Microsoft Kernel Memory](https://microsoft.github.io/kernel-memory/).
+- Integrate [scholar.ai](https://scholarai.io/), or other services.
 
 # Pull requests to **main** branch
 
