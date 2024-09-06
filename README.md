@@ -175,7 +175,7 @@ TODO
 
 - [AI functionality in JabRef](TODO).
 
-# Acknowledges
+# Acknowledgements
 
 I want to say thank you to those people and comapanies:
 - @koppor for mentoring in the project and for raising me as a real developer.
