@@ -147,27 +147,44 @@ Future features include:
 
 ### Other repositories
 
-- JPro-one: [Logical flaw with stylesheets for Markdown](https://github.com/JPro-one/JPro-Platform/issues/42).
+JPro-Platform:
+- [Logical flaw with stylesheets for Markdown](https://github.com/JPro-one/JPro-Platform/issues/42).
+
+classpath-to-file-gradle-plugin:
 - [classpath-to-file-gradle-plugi: Process finished with non-zero exit value 1](https://github.com/redocksoft/classpath-to-file-gradle-plugin/issues/4).
+
+langchain4j:
 - [langchain4j:_ \[FEATURE\] Add `logRequests` and `logResponses` to `HuggingFaceChatModel`](https://github.com/langchain4j/langchain4j/issues/1395).
 - [\[FEATURE\] Stop document ingestion in the middle of the process](https://github.com/langchain4j/langchain4j/issues/1421).
 - [\[FEATURE\] Distribution size of app that uses langchain4j with in-process embedding models](https://github.com/langchain4j/langchain4j/issues/1492).
 - [\[FEATURE\] Add context window size and `estimateNumberOfTokens` to `ChatLanguageModel`](https://github.com/langchain4j/langchain4j/issues/1552).
-- [UI progress indication button is not shown, if at start of JabRef it was hidden](https://github.com/JabRef/jabref/issues/11572).
-- [JabRef resets window size and position when a dialog occurrs](https://github.com/JabRef/jabref/issues/11668).
 - [\[FEATURE\] Make `DocumentSplitter`s to be `Iterable`s or `Stream`s](https://github.com/langchain4j/langchain4j/issues/1664).
-- [Use `Optional[T]` for values that may not be present](https://github.com/lukasschwab/arxiv.py/issues/163).
-- [Black text in Dark mode inside "Citation information"](https://github.com/JabRef/jabref/issues/11512).
-- [`ExpandingTextArea` doesn't change it's height when Enter handler is changed](https://github.com/dlsc-software-consulting-gmbh/GemsFX/issues/198).
-- [\[QUESTION\] Does `MVStore` supports mutable values in `MVMap`s](https://github.com/h2database/h2database/issues/4090).
-- [\[FEATURE\] Add metod to `Criteria` to check whether the model was downloaded or not ](https://github.com/deepjavalibrary/djl/issues/3397).
-- [bug: Logical inconsistency about privacy](https://github.com/janhq/docs/issues/54).
-- [Extra step in documentation](https://github.com/JabRef/jabref/issues/11284).
 - [\[FEATURE\] Make MessageWindowChatMemory not to remove evicted messages from ChatMemoryStore](https://github.com/langchain4j/langchain4j/issues/1107).
 - [\[FEATURE\] Generate new chat IDs automatically as a default parameter](https://github.com/langchain4j/langchain4j/issues/1108).
 - [\[FEATURE\] Implement searching on docs website](https://github.com/langchain4j/langchain4j/issues/1219).
-- [`scanLabeledControl` logic issue](https://github.com/JabRef/jabref/issues/11348).
 - [\[BUG\] FileSystemDocumentLoader cannot handle relative paths without parent directory](https://github.com/langchain4j/langchain4j/issues/816).
+
+JabRef:
+- [UI progress indication button is not shown, if at start of JabRef it was hidden](https://github.com/JabRef/jabref/issues/11572).
+- [JabRef resets window size and position when a dialog occurs](https://github.com/JabRef/jabref/issues/11668).
+- [Black text in Dark mode inside "Citation information"](https://github.com/JabRef/jabref/issues/11512).
+- [Extra step in documentation](https://github.com/JabRef/jabref/issues/11284).
+- [scanLabeledControl logic issue](https://github.com/JabRef/jabref/issues/11348).
+
+arxiv.py:
+- [Use `Optional[T]` for values that may not be present](https://github.com/lukasschwab/arxiv.py/issues/163).
+
+GemsFX:
+- [`ExpandingTextArea` doesn't change its height when Enter handler is changed](https://github.com/dlsc-software-consulting-gmbh/GemsFX/issues/198).
+
+h2database:
+- [\[QUESTION\] Does `MVStore` supports mutable values in `MVMap`s](https://github.com/h2database/h2database/issues/4090).
+
+djl:
+- [\[FEATURE\] Add method to `Criteria` to check whether the model was downloaded or not](https://github.com/deepjavalibrary/djl/issues/3397).
+
+docs:
+- [bug: Logical inconsistency about privacy](https://github.com/janhq/docs/issues/54).
 
 # Statistics
 
