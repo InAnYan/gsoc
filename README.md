@@ -5,7 +5,7 @@
 | __Project name__       | AI-Powered Summarization and “Interaction” with Academic Papers |
 | __Project mentors__    | [@koppor](https://github.com/koppor/), [@ThiloteE](https://github.com/ThiloteE), [@Calixtus](https://github.com/calixtus/) |
 | __Project page__       | TODO                                                            |
-| __Status__             | Partially complete                                              |
+| __Status__             | Complete                                              |
 
 # Project
 
