@@ -4,8 +4,8 @@
 | __Primary repository__ | [JabRef/jabref](https://github.com/jabref/jabref)               |
 | __Project name__       | AI-Powered Summarization and “Interaction” with Academic Papers |
 | __Project mentors__    | [@koppor](https://github.com/koppor/), [@ThiloteE](https://github.com/ThiloteE), [@Calixtus](https://github.com/calixtus/) |
-| __Project page__       | TODO                                                            |
-| __Status__             | Complete                                              |
+| __Project page__       | [Google Summer of Code Project Page](https://summerofcode.withgoogle.com/organizations/jabref-ev/projects/details/nFxX1kbl)  |
+| __Status__             | Complete                                                        |
 
 # Project
 
