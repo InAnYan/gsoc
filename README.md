@@ -114,7 +114,7 @@ Throughout the development process, I gained valuable insights into Software Eng
 
 Future features include:
 
-- Introduce AI-assistent search for papers in the context of a research group sharing their references and pdf files using a BibTeX file.
+- Introduce AI-assistant search for papers in the context of a research group sharing their references and pdf files using a BibTeX file.
 - Support full offline mode (no external access to network).
 - Support for external RAG (all of the workload for generating and storing embeddings, generating AI answer is offloaded to a separate server). This could be implemented using [Microsoft Kernel Memory](https://microsoft.github.io/kernel-memory/).
 - Integrate [scholar.ai](https://scholarai.io/), or other services.
