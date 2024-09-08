@@ -212,7 +212,7 @@ I want to say thank you to those people and comapanies:
 - [@koppor](https://github.com/koppor/) for mentoring in the project and for raising me as a real developer.
 - [@ThiloteE](https://github.com/ThiloteE) for mentoring in the project and for great knowledge of AI ecosystem.
 - [@calixtus](https://github.com/calixtus) for mentoring in the project and for reviewing and improving my PR.
-- [@langchain4j](https://github.com/langchain4j/) for developing and supporting the [`^LangChain4j`](https://github.com/langchain4j/langchain4j) library.
+- [@langchain4j](https://github.com/langchain4j/) for developing and supporting the [`LangChain4j`](https://github.com/langchain4j/langchain4j) library.
 - [@hendrikebbers](https://github.com/hendrikebbers) for raising and fixing the [split package problems in `langchain4j`](https://github.com/langchain4j/langchain4j/issues/1066).
 - [@StefanBratanov](https://github.com/StefanBratanov) for developing the [`jvm-openai`](https://github.com/StefanBratanov/jvm-openai) library.
 - [@deepjavalibrary](https://github.com/deepjavalibrary/) for developing the [`djl`](https://github.com/deepjavalibrary/djl) library.
