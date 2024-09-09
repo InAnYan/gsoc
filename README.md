@@ -44,10 +44,11 @@ Throughout the development process, I gained valuable insights into Software Eng
 
 ### Chatting with AI
 
-- Сonnect to LLM.
-- Store chat history.
-- Delete messages.
-- Process errors from AI.
+- We have implemented an interface to allow chatting with LLM.
+- Chat history is persisted on disk.
+- Users can delete messages.
+- Users can copy messages.
+- Errors from LLM are handled gracfully (retry generation, cancel generation).
 
 ![Chatting with AI screenshot](imgs/chatting.png)
 
@@ -55,13 +56,13 @@ Throughout the development process, I gained valuable insights into Software Eng
 
 ![Chatting with a group](imgs/group-chat.png)
 
-### Generating summary
+### AI summary generation
 
-- Generating summary in background: just as embeddings generation, with all information needed.
-- Handle both small and large documents.
-- Handle models with both small and big context window.
-- Show the summary and record the time of the generated summary and model that was used.
-- Add the ability to regenerate summary.
+- The summary is generated in the background.
+- Our algorithm can handle both short and long documents.
+- We support models with various context windows.
+- JabRef records the time and model you used for generating summary.
+- The summary can be regenerated.
 
 ![Summary](imgs/summary.png)
 
