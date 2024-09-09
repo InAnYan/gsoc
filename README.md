@@ -40,11 +40,12 @@ Initially, understanding the existing code base and learning best practices was 
 
 Throughout the development process, I gained valuable insights into Software Engineering. I identified and fixed several small bugs in the original JabRef codebase and discovered several issues in other libraries. These experiences have significantly enhanced my problem-solving skills and, especially, understanding of integrating AIs in software applications.
 
-## Work done
+## Features
 
 ### Chatting with AI
 
 - We have implemented an interface to allow chatting with LLM.
+- LLM will use context from the linked files.
 - Chat history is persisted on disk.
 - Users can delete messages.
 - Users can copy messages.
@@ -70,10 +71,11 @@ Throughout the development process, I gained valuable insights into Software Eng
 
 ![Summary generation background task](imgs/summary-background-task.png)
 
-### Generating embeddings in background
+### Embeddings generation
 
-- Tell users that they need to wait before chatting with attached files.
-- Generate embeddings in background: it also shows how much work was and should be done, with ETA estimation.
+- In order to chat with an entry, the embeddings of the file will be generated locally.
+- Embeddings are generated in the background.
+- We also calculate the estimated time left for the result.
 
 ![Waiting for embedding generation in AI chat](imgs/chatting-embeddings-waiting.png)
 
@@ -81,33 +83,36 @@ Throughout the development process, I gained valuable insights into Software Eng
 
 ### Privacy notice
 
-- Tell users how AI features work.
-- Give users link to privacy policies of AI providers.
-- Add the ability to agree or disagree (if user don't click "I agree", nothing will happen, they can turn off "AI Chat" and "AI Summary" in preferences).
+- The notice will explain to users how the LLM features work and how their data is processed by JabRef and an AI provider.
+- Users can follow the links to the privacy policies of each AI provider for more details.
+- AI features in JabRef are not mandatory and by default they are turned off (user data is private in this case).
+- AI features will be enabled, when user clicks "I agree".
+- "AI chat" and "AI summary" tabs can be hidden in the entry editor.
 
 ![Privacy notice](imgs/privacy-notice.png)
 
 ![Entry editor settings](imgs/entry-editor-settings.png)
 
-### AI preferences
+### AI preferences and AI providers
 
-- Choose chat model.
-- Supply an API token.
-
-![Basic AI preferences](imgs/basic-preferences.png)
-
-### Support for multiple AI providers
-
-- Choose any provider you like.
-- The available model list is updated according to selected AI provider.
-- The API token is saved separately for AI providers.
-- For Hugging Face there is no supplied list of models (because it's too large), instead users can enter model name manually.
+- Users can choose the AI provider they like the most: OpenAI, Mistral AI, Hugging Face.
+- Based on the selected AI provider, JabRef will show available chat models.
+- For Hugging Face there is no supplied list of models (because there are too many models), instead users can enter the model name manually.
+- The API token is stored securely in Java keyring.
+- The chat model and API token are linked to the selected AI provider. So, when users change AI provider, the correct model and API token is loaded.
 
 ![List of AI providers](imgs/ai-providers.png)
 
+![Basic AI preferences](imgs/basic-preferences.png)
+
 ### Expert settings
 
-- Users can customize how AI will respond to their requests.
+- The embedding model can be chosen.
+- Users can customize how the AI will respond to their requests.
+- The API base URL can be replaced instead of a default one, so that a local LLM can be used.
+- The instruction (also called system prompt) is customizable.
+- The temperature can be modified in order to make AI generate more probable or more diverse (creative) answers.
+- There are also settings to configure the document splitter and retrieval augmented generation (RAG).
 
 ![Expert settings](imgs/expert-settings.png)
 
@@ -119,6 +124,7 @@ Future features include:
 - Support full offline mode (no external access to network).
 - Support for external RAG (all of the workload for generating and storing embeddings, generating AI answer is offloaded to a separate server). This could be implemented using [Microsoft Kernel Memory](https://microsoft.github.io/kernel-memory/).
 - Integrate [scholar.ai](https://scholarai.io/), or other services.
+- Add more AI providers and embedding models.
 
 ## Pull requests
 
